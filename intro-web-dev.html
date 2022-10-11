@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro to Web Dev - Changed</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      function startTime() {
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML = h + ':' + m + ':' + s;
+        setTimeout(startTime, 1000);
+      }
+
+      function checkTime(i) {
+        if (i < 10) {
+          i = '0' + i;
+        }
+        return i;
+      }
+    </script>
+    <meta charset="UTF-8" />
+  </head>
+  <body onload="startTime()">
+    <div class="container-fluid">
+      <div class="col col-md-10 col-lg-8 col-xl-6">
+        <div class="row row-details justify-content-between">
+          <div class="col">
+            <p class="text-white float-start">Links</p>
+          </div>
+          <div class="col float-end">
+            <p class="text-white float-end">Date</p>
+          </div>
+        </div>
+        <div class="row row-content">
+          <div class="col col-content">
+            <div class="row">
+              <div class="d-flex align-items-center justify-content-center">
+                <h1 class="text-white bg-grey" id="txt"></h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8 bg-secondary text-danger">
+                <p class="text-danger"></p>
+              </div>
+              <div class="col-4">
+                <div class="row">
+                  <div class="col">
+                    <div class="row bg-info">test</div>
+                    <div class="row bg-danger">test</div>
+                  </div>
+                  <div class="col">
+                    <div class="row bg-danger">test</div>
+                    <div class="row bg-info">test</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="d-flex align-items-center justify-content-center">
+                <p class="text-white">Good evening, Ean.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="d-flex align-items-center justify-content-center">
+                <p class="text-white">What is your main focus for today?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-details justify-content-between">
+          <div class="col">
+            <p class="text-white float-start">Cebu City</p>
+          </div>
+          <div class="col">
+            <div class="d-flex align-items-center justify-content-center">
+              <h4 class="text-white">Insert quote for inspiration</h4>
+            </div>
+          </div>
+          <div class="col float-end">
+            <p class="text-white float-end">Todo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
