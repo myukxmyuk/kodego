@@ -1,24 +1,83 @@
-body{
-    background-image: url('./assets/twice2.jpg');
-    background-size: cover;
+.container-fluid{
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    font-size: 10vh;
-}
-
-.row-details {
+.header {
+    position: fixed;
     height: 10vh;
+    background-color: #2c3e50;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 2;
 }
 
-.row-content {
+.content {
+    position: relative;
+    top: 10vh;
     height: 80vh;
+    width: 100%;
+    background-color: #1abc96;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.bg-grey{
-    background-color: rgba(128, 128, 128, 0.293);
+.portfolio {
+    height: 80vh;
+    width: 100%;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.col-content {
-    vertical-align: middle;
+.about {
+    height: 50vh;
+    width: 100%;
+    background-color: #f1c40f;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.contact {
+    height: 90vh;
+    width: 100%;
+    background-color: #e74c3c;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    height: 15vh;
+    background-color: #2c3e50;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:hover h2 {
+    text-decoration: none;
+    color: #1abc96;   
+    transition: all 400ms ease;
+}
+
+.name:hover {
+    color: #f1c40f;
+    transition: all 400ms ease;
+}
+
+.picture {
+    height: 300px;
+    margin-top: 200px;
+}
+
+.content-container {
+    height: 500px;
+}
+
